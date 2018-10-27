@@ -1,3 +1,3 @@
 FROM nginx:alpine
 
-RUN "/usr/bin/nginx -g "daemon off;"
+COPY ./html/index.html /usr/share/nginx/html/index.html
